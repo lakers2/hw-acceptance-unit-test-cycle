@@ -87,11 +87,11 @@ When /^(?:|I )select "([^"]*)" from "([^"]*)"$/ do |value, field|
 end
 
 When /^(?:|I )check "([^"]*)"$/ do |field|
-  check(field)
+  check("ratings_#{field}")
 end
 
 When /^(?:|I )uncheck "([^"]*)"$/ do |field|
-  uncheck(field)
+  uncheck("ratings_#{field}")
 end
 
 When /^(?:|I )choose "([^"]*)"$/ do |field|
@@ -100,6 +100,10 @@ end
 
 When /^(?:|I )attach the file "([^"]*)" to "([^"]*)"$/ do |path, field|
   attach_file(field, File.expand_path(path))
+end
+
+Then(/^the director of "([^"]*)" should be "([^"]*)"$/) do |title, director_name|
+  expect(Movie.find_by_title(title).director == director_name)
 end
 
 Then /^(?:|I )should see "([^"]*)"$/ do |text|

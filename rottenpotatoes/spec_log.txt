@@ -1,0 +1,10 @@
+.."--------------"
+#<Movie id: 1, title: "Chicken Run", rating: "G", description: nil, release_date: "2000-06-21 00:00:00", created_at: "2021-10-12 03:20:55", updated_at: "2021-10-12 03:20:55", director: "Hans">
+."--------------"
+#<Movie id: 1, title: "Chicken Run", rating: "G", description: nil, release_date: "2000-06-21 00:00:00", created_at: "2021-10-12 03:20:55", updated_at: "2021-10-12 03:20:55", director: "">
+.
+
+Finished in 0.09159 seconds (files took 1.6 seconds to load)
+4 examples, 0 failures
+
+Coverage report generated for Cucumber Features, RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 54 / 63 LOC (85.71%) covered.
